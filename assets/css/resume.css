@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+    background-color: #EFF0D1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7A89C2;
+    margin: 0px;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    margin: 10px;
+}
+
+h3 span {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.skill-description {
+    margin-left: 40px;
+}
+
+section {
+    margin: 50px 0px 50px 0px;
+}
+
+/* Larger than smartphone -- mobile first approach */
+@media screen and (min-width: 576px) {
+    aside {
+        width: 18%;
+    }
+
+    #education {
+        display: flex;
+    }
+
+    #education-right {
+        border-left: 2px solid #72788D;
+        padding-left: 20px;
+    }
+
+    #skills {
+        display: flex;
+    }
+
+    #skills-right {
+        border-left: 2px solid #72788D;
+        padding-left: 20px;
+    }
+
+    #experience {
+        display: flex;
+    }
+
+    #experience-right {
+        border-left: 2px solid #72788D;
+        padding-left: 20px;
+    }
+
+}
