@@ -50,6 +50,7 @@ section {
     #education-right {
         border-left: 2px solid #72788D;
         padding-left: 20px;
+        width: 82%
     }
 
     #skills {
@@ -59,6 +60,7 @@ section {
     #skills-right {
         border-left: 2px solid #72788D;
         padding-left: 20px;
+        width: 82%;
     }
 
     #experience {
@@ -68,6 +70,7 @@ section {
     #experience-right {
         border-left: 2px solid #72788D;
         padding-left: 20px;
+        width: 82%;
     }
 
 }
