@@ -1,3 +1,25 @@
+@font-face {
+    font-family: "antonio";
+    src: url("../fonts/Antonio-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "lato";
+    src: url("../fonts/Lato-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "antonio";
+}
+
+h3 {
+    font-family: "lato";
+}
+
 body {
     margin: 0px;
     background-color: #EFF0D1;
@@ -11,13 +33,23 @@ nav {
     align-items: center;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 10px;
+nav h1 {
+    padding-left: 40px;
 }
 
-a {
+nav ul {
+    list-style-type: none;
+    padding: 14px 16px;
+}
+
+nav li a {
     text-decoration: none;
+    color: #111;
+    padding: 14px 16px;
+}
+
+nav li a:hover {
+    background-color: #72788D;
 }
 
 main {
@@ -25,8 +57,21 @@ main {
 }
 
 h3 span {
-    font-weight: normal;
+    font-family: "lato";
     font-style: italic;
+}
+
+p {
+    font-family: "lato";
+}
+
+li {
+    font-family: "lato";
+}
+
+li a {
+    text-decoration: none;
+    font-family: "lato";
 }
 
 .skill-description {
