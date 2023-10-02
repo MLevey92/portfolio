@@ -63,49 +63,36 @@ nav li a:hover {
     font-family: "lato";
 }
 
-.project-tag {
-    background: #7A89C2;
-    position: absolute;
-    left: 81px;
-    bottom: 20px;
+img {
+    border: 2px solid #7A89C2;
 }
 
-#first-work {
-    display: flex;
-    justify-content: center;
-    position: relative;
-
+#links {
+    margin: 10px 1%;
 }
 
 #first-work img {
-    margin: 10px;
-    border: 4px solid #7A89C2;
-}
-
-
-#first-work h3 {
-    margin: 5px 5px 0px 5px;
-}
-
-#first-work h6 {
-    margin: 0px 5px 5px 5px;
+    width: 60%;
+    margin-left: 62px;
 }
 
 #first-work a {
-    height: 100%;
-    margin-left: 18%;
-    padding-right: 0%;
+    width: 60%
 }
 
 #other-work {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #other-work img {
+    width: 100%;
+}
+
+#other-work a {
+    width: 40%;
     margin: 10px;
-    border: 4px solid #7A89C2;
 }
 
 #contact-me ul{
@@ -139,13 +126,6 @@ nav li a:hover {
 
     #work {
         display: flex;
-    }
-
-    .project-tag {
-        background: #7A89C2;
-        position: absolute;
-        left: 183px;
-        bottom: 30px;
     }
 
     #links {
