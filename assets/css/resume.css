@@ -1,3 +1,9 @@
+:root {
+    --background: black;
+    --border: white;
+    --border2: gray;
+}
+
 @font-face {
     font-family: "antonio";
     src: url("../fonts/Antonio-VariableFont_wght.ttf") format("truetype");
@@ -14,6 +20,7 @@
 
 * {
     font-family: "antonio";
+    color: var(--border);
 }
 
 h3 {
@@ -22,13 +29,12 @@ h3 {
 
 body {
     margin: 0px;
-    background-color: #EFF0D1;
+    background-color: var(--background);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #7A89C2;
     margin: 0px;
     align-items: center;
     box-shadow: 5px 10px #72788D;
@@ -45,7 +51,7 @@ nav ul {
 
 nav li a {
     text-decoration: none;
-    color: #111;
+    color: var(--border);
     padding: 14px 16px;
     font-family: "antonio";
 }
@@ -72,6 +78,7 @@ li {
 }
 
 li a {
+    color: var(--border);
     text-decoration: none;
     font-family: "lato";
 }
