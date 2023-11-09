@@ -1,3 +1,9 @@
+:root {
+    --background: black;
+    --border: white;
+    --border2: gray;
+}
+
 @font-face {
     font-family: "antonio";
     src: url("../fonts/Antonio-VariableFont_wght.ttf") format("truetype");
@@ -13,139 +19,69 @@
 }
 
 * {
+    font-family: "lato";
+}
+
+h1 {
+    font-family: "antonio";
+}
+
+h3 {
     font-family: "antonio";
 }
 
 body {
-    margin: 0px;
-    background-color: #EFF0D1;
+    background-color: var(--background);
+    color: var(--border);
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: #7A89C2;
-    margin: 0px;
-    align-items: center;
-    box-shadow: 5px 10px #72788D;
+li {
+    display: inline;
+    text-decoration: none;
 }
 
-nav h1 {
-    padding-left: 40px;
+a {
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 2px;
 }
 
-aside {
-    padding-left: 30px;
+a:hover {
+    box-shadow: 2px 5px 10px var(--border2);
+    font-size: 1.1em;
 }
 
 
-nav ul {
-    list-style-type: none;
-    margin: 10px;
+
+#projects_aside {
+    border-right: solid 2px var(--border);
 }
 
-nav li {
-    margin: 5px;
+#about_me_aside {
+    border-right: solid 2px var(--border);
 }
 
-nav li a {
-    text-decoration: underline;
-    color: #111;
-    padding: 14px 16px;
-}
-
-nav li a:hover {
-    background-color: #72788D;
-}
-
-#about-me p {
-    margin: 10px;
-    font-family: "lato";
+#contact_me_aside {
+    border-right: solid 2px var(--border);
 }
 
 img {
-    border: 2px solid #7A89C2;
+    border-radius: 10px;
+    border: solid 2px var(--border2);
 }
 
-#links {
-    margin: 10px 1%;
+img:hover {
+    box-shadow: 2px 5px 10px var(--border2);
+    border: solid 10px var(--border-2);
 }
 
-#first-work img {
-    width: 60%;
-    margin-left: 62px;
+#mainImg {
+    height: 200px;
+    width: auto;
 }
 
-#first-work a {
-    width: 60%
+#subImg {
+    height: 150px;
+    width: auto;
 }
 
-#other-work {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#other-work img {
-    width: 100%;
-}
-
-#other-work a {
-    width: 40%;
-    margin: 10px;
-}
-
-#contact-me ul{
-    display: flex;
-    list-style-type: none;
-}
-
-#contact-me li {
-    margin: 10px;
-}
-
-/* Larger than smartphone -- mobile first approach */
-@media screen and (min-width: 576px) {
-    nav ul li {
-        display: inline;
-    }
-
-    aside {
-        width: 18%;
-    }
-    
-    #about-me {
-        display: flex;
-    }
-
-    #about-me p {
-        border-left: 2px solid #72788D;
-        width: 82%;
-        padding: 20px;
-    }
-
-    #work {
-        display: flex;
-    }
-
-    #links {
-        border-left: 2px solid #72788D;
-        width: 82%;
-        padding: 20px;
-    }
-
-
-
-    #contact-me {
-        display: flex;
-    }
-
-    #contact-me li {
-        display: inline;
-    }
-
-    #contact-me ul {
-        border-left: 2px solid #72788D;
-        width: 82%;
-    }
-}
